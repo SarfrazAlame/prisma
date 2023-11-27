@@ -13,17 +13,19 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        // ... you will write your Prisma Client queries here
-        yield prisma.user.create({
+        yield prisma.user.update({
+            where: {
+                id: 1
+            },
             data: {
-                email: "arshad@gmail.com",
-                name: "sarfraz"
+                name: "harkiratsingh2"
             }
         });
     });
 }
 main()
     .then(() => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("done");
     yield prisma.$disconnect();
 }))
     .catch((e) => __awaiter(void 0, void 0, void 0, function* () {

@@ -6,7 +6,7 @@ async function main() {
     // ... you will write your Prisma Client queries here
     await prisma.user.create({
         data: {
-            email: "sarfraz11@123.com",
+            email: "arshad@gmail.com",
             name: "sarfraz"
         }
     })

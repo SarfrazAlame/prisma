@@ -12,7 +12,6 @@ async function main() {
     })
 }
 
-
 main()
     .then(async () => {
         console.log("doine")

@@ -12,8 +12,10 @@ async function main() {
     })
 }
 
+
 main()
     .then(async () => {
+        console.log("doine")
         await prisma.$disconnect()
     })
     .catch(async (e) => {
